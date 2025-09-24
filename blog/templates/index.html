@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+    <title>Homepage</title>
+
+</head>
+<body class="main-body">
+    <header>
+            <a href="http://127.0.0.1:5000/"><img src="{{ url_for('static', filename='Blog_Logo_transparente.png')}}" alt="meu cacete"></a>
+    </header>
+    <main>
+        <section>
+            {% for post, time in post_time %}
+                <div class="post-div">
+                    <p style="white-space: pre-line;">
+                        {{ post }}
+                    </p>
+                </div>
+                <div class="post-bar">
+                    {{ time }}
+                    emoji-like
+                    compartilhar
+                </div>
+            {% endfor %}
+        </section>
+
+        <section>
+            <a href="/send-post"> <button class="post-button" id="send-ButtonID">+</button> </a>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>

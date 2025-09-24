@@ -1,0 +1,11 @@
+# Folders
+.venv/
+__pycache__/
+My_Secrets/
+
+# Single files
+validate_rec_password.js
+post_script.js
+DefaultUserIcon.png
+Tools.py
+teste.html

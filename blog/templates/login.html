@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+    <title>Logar-se</title>
+</head>
+<body>
+    <header>
+            <a href="http://127.0.0.1:5000/"><img src="{{ url_for('static', filename='Blog_Logo_transparente.png')}}" alt="meu cacete"></a>
+    </header>
+
+    <form method="post">
+        Email:<label class="invisible-label">-</label><input type="email" size="25" name="email"><br>
+        Senha:<label class="invisible-label">-</label><input type="text" size="25" name="senha"><br>
+        <a href="rec_password">Esqueci minha senha?</a><br>
+        <button>Enviar</button><br>
+        <a href="http://127.0.0.1:5000/register"> Não tenho conta? Registrar-se</a>
+    </form>
+</body>
+</html>

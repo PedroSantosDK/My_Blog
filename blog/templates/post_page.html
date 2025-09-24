@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+    <title>Postante</title>
+</head>
+<body>
+    <header>
+            <a href="http://127.0.0.1:5000/"><img src="{{ url_for('static', filename='Blog_Logo_transparente.png')}}" alt="meu cacete"></a>
+    </header>
+
+    <form method="post">
+        <label class="post-label">Qual a boa de hoje?</label><br>
+        <textarea class="post-entry" name="postagem" required></textarea><br>
+        <button type="submit" class="post-send-button">
+            <img src="{{ url_for('static', filename='Send_img.png')}}"></img>
+        </button>
+    </form>
+</body>
+</html>
